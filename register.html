@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | EcoMind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white">
+    <div class="max-w-md mx-auto pt-20">
+        <h1 class="text-3xl font-bold mb-6">Register</h1>
+        <form method="POST">
+            <input type="text" name="phone" placeholder="Phone Number (International OK)" class="block w-full mb-4 p-2 bg-slate-800 rounded">
+            <input type="email" name="email" placeholder="Email" class="block w-full mb-4 p-2 bg-slate-800 rounded">
+            <input type="password" name="password" placeholder="Password" class="block w-full mb-4 p-2 bg-slate-800 rounded">
+            <select name="role" class="block w-full mb-4 p-2 bg-slate-800 rounded">
+                <option value="user">User</option>
+                <option value="picker">Picker</option>
+                <option value="monitor">Monitor</option>
+            </select>
+            <button type="submit" class="bg-green-500 p-2 rounded">Register</button>
+        </form>
+        <a href="/login">Login</a>
+    </div>
+</body>
+</html>
